@@ -43,7 +43,7 @@ public final class CommandHandler<A extends Audience> {
                 .handler(ctx -> {
                     ctx.getSender().sendMessage(Component.text("You are running EpicGuard v" + Constants.CURRENT_VERSION +
                             " on " + this.epicGuard.platform().platformVersion(), TextColor.color(0x99ff00)));
-                    ctx.getSender().sendMessage(TextUtils.cachedComponent("<#99ff00> Run <bold><white>/guard help</bold> to see available commands and statistics"));
+                    ctx.getSender().sendMessage(TextUtils.cachedComponent("<#99ff00> Run <bold><white>/epicguard help</bold> to see available commands and statistics"));
                 }));
 
         final SubCommand[] subCommands = {
