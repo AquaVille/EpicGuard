@@ -68,7 +68,7 @@ public final class EpicGuardPaper extends JavaPlugin implements Platform {
               Function.identity(),
               Function.identity()
       );
-      commandManager.registerBrigadier();
+      //commandManager.registerBrigadier(); // BRIGADIER SEEMS TO BE A PROBLEM FOR 1.21
       new CommandHandler<>(epicGuard, commandManager).register();
     } catch (Exception e) {
       throw new RuntimeException(e);
